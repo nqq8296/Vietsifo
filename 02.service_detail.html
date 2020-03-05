@@ -21,7 +21,7 @@
                 <ul class="nav">
                     <li class="nav-item"><a class="nav-link" href="#">home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">dịch vụ</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">yêu cầu hỗ trợ xử lí sự cố</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">yêu cầu hỗ trợ xử lí sự cố</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">đối tác</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">blog</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">tuyển dụng</a></li>
@@ -314,6 +314,51 @@
                     </div>
                 </div>
             </section>
+        </div>
+        <!-- The Modal -->
+        <div class="modal" id="myModal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title font-weight-bold"><i class="fal fa-ticket"></i> Ticket hỗ trợ</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="register_info clearfix">
+                            <div class="row">
+                                <div class="register_item col-md-6">
+                                    <label>Họ tên</label>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Họ tên">
+                                    </div>
+                                </div>
+                                <div class="register_item col-md-6">
+                                    <label>Email liên hệ</label>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Email liên hệ">
+                                    </div>
+                                </div>
+                                <div class="register_item col-md-6">
+                                    <label>Nội dung</label>
+                                    <div class="form-group">
+                                        <textarea name="message" cols="30" rows="6" type="text" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                                <div class="register_item col-md-6">
+                                    <label>Hình ảnh đính kèm</label>
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="customFile">
+                                        <label class="custom-file-label" for="customFile">Choose file</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn_cta btn_black">Gửi đi</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <footer class="page_footer">
