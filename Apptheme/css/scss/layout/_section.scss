@@ -631,21 +631,6 @@
                         margin-left: 66px;
                     }
                 }
-
-                &.single_method {
-                    max-width: 100%;
-                    flex-basis: 100%;
-                    margin-left: auto;
-                    margin-right: auto;
-
-                    .method_header {
-                        display: none;
-                    }
-
-                    .method_content {
-                        margin-left: 0;
-                    }
-                }
             }
         }
     }
@@ -654,25 +639,7 @@
         background: #eeeeee;
         padding-bottom: 32px;
 
-        .subtitle {
-            font-size: 16px;
-            font-weight: bold;
-            margin-bottom: 24px;
 
-            @media (min-width: 768px) {
-                font-size: 18px;
-                margin-bottom: 32px;
-            }
-
-            @media (min-width: 1024px) {
-                margin-bottom: 40px;
-            }
-
-            @media (min-width: 1200px) {
-                font-size: 24px;
-                margin-bottom: 50px;
-            }
-        }
 
         .result_item {
             display: flex;
@@ -718,72 +685,22 @@
 
                 &_extra {
                     margin-top: 16px;
-                    padding-left: 0px;
+                    padding-left: 24px;
 
                     @media (min-width: 768px) {
                         margin-top: 24px;
-                        padding-left: 24px;
                     }
 
                     .extra_item {
                         list-style-type: circle;
                         margin-bottom: 16px;
-
                         @media (min-width: 768px) {
                             margin-bottom: 24px;
                         }
                     }
                 }
             }
-        }
-    }
 
-    &_testing {
-        background: #eeeeee;
-        padding-bottom: 32px;
-
-        .testing_item {
-            display: flex;
-            margin-bottom: 24px;
-
-            @media (min-width: 768px) {
-                margin-bottom: 32px;
-            }
-
-            @media (min-width: 1024px) {
-                margin-bottom: 40px;
-            }
-
-            @media (min-width: 1200px) {
-                margin-bottom: 50px;
-            }
-
-            .testing_icon {
-                svg {
-                    width: 32px;
-                    height: auto;
-                    margin-right: 16px;
-
-                    @media (min-width: 768px) {
-                        width: 40px;
-                    }
-
-                    @media (min-width: 1200px) {
-                        width: 50px;
-                    }
-                }
-            }
-
-            .testing_title {
-
-                @media (min-width: 768px) {
-                    font-size: 18px;
-                }
-
-                @media (min-width:1200px) {
-                    font-size: 24px;
-                }
-            }
         }
     }
 }
