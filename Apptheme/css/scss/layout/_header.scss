@@ -313,6 +313,14 @@
                         top: 0;
                         left: -35px;
                     }
+
+                    .target_sub_item {
+                        padding-left: 0;
+
+                        @media (min-width: 768px) {
+                            padding-left: 16px;
+                        }
+                    }
                 }
             }
         }
