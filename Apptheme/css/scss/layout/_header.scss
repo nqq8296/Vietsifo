@@ -10,6 +10,8 @@
         @media (min-width: 1600px) {
             margin-bottom: 100px;
         }
+
+
     }
 
     .header_top {
@@ -103,11 +105,11 @@
         }
 
         &#slide_1 {
-            background-image: url("../images/header_bg.png");
+            // background-image: url("../images/header_bg.png");
         }
 
         &#slide_2 {
-            background-image: url("../images/header_bg_2.png");
+            // background-image: url("../images/header_bg_2.png");
         }
 
     }
@@ -328,6 +330,35 @@
         .header_top {
             background: #06141B;
             padding-bottom: 10px;
+        }
+    }
+}
+
+.vid_container {
+    position: relative;
+
+    .bg_Video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -100;
+        overflow: hidden;
+        pointer-events: none;
+
+        #bg_Video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+            background-repeat: no-repeat;
+            background-size: cover;
         }
     }
 }
