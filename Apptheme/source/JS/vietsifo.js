@@ -20,6 +20,10 @@ $(document).ready(function() {
         swipeThreshold: 55
 
     });
+
+    if ($(".lightgallery").length > 0) {
+        $('.lightgallery').lightGallery();
+    }
 });
 
 function btnExpandClick(e) {
