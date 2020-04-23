@@ -191,8 +191,7 @@
         @media (min-width: 992px) {
             margin-top: -38px;
 
-            p,
-            h3 {
+            .content_wrap {
                 max-width: 80%;
 
                 margin: {
@@ -203,7 +202,7 @@
         }
 
         @media (min-width: 1600px) {
-            p,h3 {
+            .content_wrap {
                 max-width: 70%;
             }
         }
@@ -217,6 +216,7 @@
             p {
                 padding: 8px 0 8px 24px;
                 border-left: 1px solid #F6963F;
+                font-style: italic;
             }
         }
 
@@ -253,6 +253,10 @@
 
                 .story_title {
                     margin-bottom: 0;
+                }
+
+                @media (min-width: 768px) {
+                    max-width: 65%;
                 }
             }
 
@@ -306,6 +310,10 @@
             &_left {
                 .story_footer {
                     right: 48px;
+                }
+
+                .story_header {
+                    float: left;
                 }
             }
 
