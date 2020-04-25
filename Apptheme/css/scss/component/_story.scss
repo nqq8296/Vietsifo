@@ -127,8 +127,6 @@
             @media (min-width: 1024px) {
                 margin-left: 32px;
             }
-
-            @media (min-width: 1200px) {}
         }
     }
 }
@@ -156,14 +154,20 @@
 
         .news_summary {
             margin-bottom: 24px;
+
+            @media (min-width: 992px) {
+                margin-bottom: 0;
+            }
         }
-
-
 
         @media (min-width: 992px) {
             position: relative;
+        }
 
-            .cover {
+        .cover {
+
+            @media (min-width: 992px) {
+
                 position: relative;
                 padding: 24px 24px 0 24px;
                 background: #ffffff;
@@ -173,13 +177,7 @@
                 width: 80%;
             }
 
-            .news_summary {
-                margin-bottom: 0;
-            }
-        }
-
-        @media (min-width: 1600px) {
-            .cover {
+            @media (min-width: 1600px) {
                 width: 70%;
             }
         }
@@ -190,8 +188,12 @@
 
         @media (min-width: 992px) {
             margin-top: -38px;
+        }
 
-            .content_wrap {
+        .content_wrap {
+
+            @media (min-width: 992px) {
+
                 max-width: 80%;
 
                 margin: {
@@ -199,16 +201,14 @@
                     right: auto;
                 }
             }
-        }
 
-        @media (min-width: 1600px) {
-            .content_wrap {
+            @media (min-width: 1600px) {
                 max-width: 70%;
             }
         }
 
         .news_title {
-            font-size: 20px;    
+            font-size: 20px;
             font-weight: 600;
         }
 
@@ -289,7 +289,6 @@
                     float: none;
                     margin-left: 0;
 
-
                     @media (min-width: 768px) {
                         float: right;
                         margin-left: 16px;
@@ -321,6 +320,66 @@
                 @media (min-width: 768px) {
                     margin-bottom: 0;
                 }
+            }
+        }
+    }
+}
+
+.job_item {
+
+    margin-bottom: 16px;
+    padding: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+
+    @media (min-width: 768px) {
+        margin-bottom: 24px;
+        flex-basis: 45%;
+        padding: 15px;
+    }
+
+    @media (min-width: 1024px) {
+        flex-basis: 30%;
+    }
+
+    .job_title {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 8px;
+
+        .job_link:hover {
+            text-decoration: none;
+        }
+
+        @media (min-width: 768px) {
+            font-size: 24px;
+        }
+    }
+
+    .job_detail {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            display: flex;
+            align-items: baseline;
+            margin-bottom: 8px;
+            font-size: 16px;
+
+            .far {
+                color: $primary;
+                flex-basis: 10%;
+                text-align: center;
+                margin-right: 5px;
+            }
+
+            span {
+                flex-basis: 90%;
+            }
+
+            @media (min-width: 768px) {
+                font-size: 18px;
             }
         }
     }
