@@ -93,6 +93,10 @@
             margin-bottom: 32px;
 
             @media (min-width: 768px) {
+                font-size: 20px;
+            }
+
+            @media (min-width: 1200px) {
                 font-size: 24px;
             }
         }
@@ -356,7 +360,7 @@
         }
     }
 
-    .job_detail {
+    .job_info {
         list-style-type: none;
         padding: 0;
         margin: 0;
@@ -365,17 +369,17 @@
             display: flex;
             align-items: baseline;
             margin-bottom: 8px;
-            font-size: 16px;
+            font-size: 18px;
 
-            .far {
-                color: $primary;
+            svg {
                 flex-basis: 10%;
                 text-align: center;
-                margin-right: 5px;
+                margin-right: 10px;
             }
 
             span {
                 flex-basis: 90%;
+                overflow: hidden;
             }
 
             @media (min-width: 768px) {
